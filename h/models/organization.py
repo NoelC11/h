@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import sqlalchemy as sa
 import slugify
 from xml.etree import ElementTree
