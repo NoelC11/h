@@ -84,6 +84,10 @@ class Group(Base, mixins.Timestamps):
 
     scopes = sa.orm.relationship('GroupScope', backref='group', cascade='all, delete-orphan')
 
+
+    organization = sa.Column(sa.Integer)
+
+
     def __init__(self, **kwargs):
         super(Group, self).__init__(**kwargs)
 
